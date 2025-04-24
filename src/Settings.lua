@@ -49,10 +49,6 @@ else
   end
 
   function DV.create_settings_tab(num_tabs)
-     -- Ensure that no duplicate tabs are created:
-     -- (the game (usually) has 4 settings tabs)
-     if num_tabs > 4 then return nil end
-
      return {
         label = "Other",
         tab_definition_function = DV.get_settings_tab,
